@@ -1,2 +1,1 @@
-# Mazurek-K.github.io
-
+# Just my basic website
