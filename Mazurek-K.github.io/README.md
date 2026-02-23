@@ -1,2 +1,0 @@
-# Mazurek-K.github.io
-
