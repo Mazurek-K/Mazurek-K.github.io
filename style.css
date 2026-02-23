@@ -6,14 +6,17 @@ body {
 
 nav {
     background: #111;
-    padding: 15px;
+    padding: 25px;
+    display: flex;          
+    justify-content: flex-end; 
 }
 
 nav a {
     color: white;
-    margin-right: 20px;
+    margin-right: 25px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px; 
 }
 
 nav a:hover {
