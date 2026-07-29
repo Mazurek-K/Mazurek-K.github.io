@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Projects - Krzysztof Mazurek</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
+
 
 <nav>
     <a href="index.html">Home</a>
@@ -12,122 +16,297 @@
     <a href="projects.html">Projects</a>
 </nav>
 
-<section>
-    <h1>Selected projects list</h1>
-
-    <details>
-        <summary>(Currently under development)</summary>
-
-        <ul>
-
-             <li>
-                Reverse engineering of the JAXA GOSAT mission for the course in Space systems engineering and operations.
-
-            </li>
-
-            <li> Finite element solver in python- to be extended alongside the study course. 
-
-            <video width="90%" height="400px" controls>
-            <source src="video/Static.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video>
-
-            <video width="90%" height="400px" controls>
-            <source src="video/Mode_4.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video>
 
 
-            <video width="90%" height="400px" controls>
-            <source src="video/modal.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video>
-
-            </li>
-           
-
-        </ul>
-    </details>
-
-    <details>
-        <summary>Satellite attitude control</summary>
-        <iframe src="pdf/Attitude_dynamics.pdf" width="100%" height="600px"></iframe>
-    </details>
-
-    <details>
-        <summary>Planetary and interplanetary mission</summary>
-        <iframe src="pdf/Orbital_Mechanics.pdf" width="100%" height="600px"></iframe>
-    </details>
-
-    <details>
-        <summary>Solar array opening simulation</summary>
-        <iframe src="pdf/Multibody_dynamics.pdf" width="100%" height="600px"></iframe>
-    </details>
-
-    <details>
-        <summary>Preliminary design of a solid rocket motor</summary>
-        <iframe src="pdf/Propulsion_project.pdf" width="100%" height="600px"></iframe>
-    </details>
+<div class="projects">
 
 
-    <details>
-        <summary>Feedforward control of underactuated multibody systems in a co-simulation framework</summary>
-        <iframe src="pdf/Bachelor_thesis.pdf" width="100%" height="600px"></iframe>
-    </details>
+<!-- FEM SOLVER -->
+
+<section class="project">
+
+    <div class="description">
+
+        <h2>2D FEM Solver</h2>
+
+        <p>
+            A lightweight Python finite element method package for structural analysis. 
+            The project provides capabilities for static analysis, modal analysis, and forced vibration simulations. 
+            It supports two-node beam and truss elements and includes dynamic analysis based on a diagonal damping matrix. 
+            The dynamic response is computed using the reduced order Modal Response Method and results are 
+            retrieved through the Mode Displacement Method.
+        </p>
+
+
+    </div>
+
+
+    <div class="media-container">
+
+        <video controls>
+            <source src="video/static.mp4" type="video/mp4">
+        </video>
+
+
+        <video controls>
+            <source src="video/mode5.mp4" type="video/mp4">
+        </video>
+
+
+        <video controls>
+            <source src="video/forced.mp4" type="video/mp4">
+        </video>
+
+
+    </div>
+
+</section>
 
 
 
-  <details>
-    <summary>MotoStudent</summary>
-    <ul>
-        <li>
-            A casual overview of some projects (each at a rather arbitrary stage of development) that I contributed to during my time at SKAP WUT.
 
 
-            <div class="side-by-side">
-                <!-- Replace with your image -->
-                <img src= "images/skap_motor.jpg" width="45%" alt="Project Image">
+<!-- SPACE MISSION -->
 
-                <!-- Your video -->
-                <img src= "images/skap_lamination.jpg" width="45%" alt="Project Image">
-            </div>
+<section class="project">
 
+    <div class="description">
 
-            <div class="side-by-side">
-                <!-- Replace with your image -->
-                <img src= "images/skap_electrical_work.jpg" width="45%" alt="Project Image">
+        <h2>Space Mission Reverse Engineering</h2>
 
-                <!-- Your video -->
-                <img src= "images/skap_electrical_schematics.png" width="45%" alt="Project Image">
-            </div>
+        <p>
+            Analysis and reconstruction of JAXA GOSAT remote sensig mission. The work included deep literature review
+            as well as numerical simulaitons. On the left are presented selected simulation results which I developped for the project.
+        </p>
 
 
-            <div class="side-by-side">
-                <!-- Replace with your image -->
-                <img src= "images/skap_swingarm.jpg" width="45%" alt="Project Image">
+        <a href="pdf/SSEO.pdf" target="_blank">
+            Open project report (PDF)
+        </a>
 
-                <!-- Your video -->
-                <img src= "images/skap_swingarm_tip.jpg" width="45%" alt="Project Image">
-            </div>
+    </div>
 
-            <div class="side-by-side">
-                <!-- Replace with your image -->
-                <img src= "images/skap_swingarm_fem.png" width="45%" alt="Project Image">
 
-                <!-- Your video -->
-                <video width="45%" height="400px" controls>
-                    <source src="video/adams_skap.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </li>
-    </ul>
-</details>
 
+    <div class="media-container">
+
+        <img src="images/space1.jpg">
+        <img src="images/space2.jpg">
+
+    </div>
 
 
 </section>
 
 
+
+
+
+
+
+<!-- ATTITUDE CONTROL -->
+
+
+<section class="project">
+
+    <div class="description">
+
+        <h2>Satellite Attitude Control</h2>
+
+        <p>
+            Design and analysis of spacecraft attitude dynamics and
+            control strategies.
+        </p>
+
+
+        <a href="pdf/Attitude_dynamics.pdf" target="_blank">
+            Open project report (PDF)
+        </a>
+
+
+    </div>
+
+
+
+    <div class="media-container">
+
+        <img src="images/attitude1.jpg">
+        <video controls>
+            <source src="video/attitude.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+
+</section>
+
+
+<!-- Orbital -->
+
+
+<section class="project">
+
+    <div class="description">
+
+        <h2>Orbital Mechanics</h2>
+
+        <p>
+            Design and analysis of spacecraft interplanetary transfer and closed-orbit perturbations
+        </p>
+
+
+        <a href="pdf/Orbital_Mechanics.pdf" target="_blank">
+            Open project report (PDF)
+        </a>
+
+
+    </div>
+
+
+
+    <div class="media-container">
+
+        <img src="images/orbital1.jpg">
+        <img src="images/orbital1.jpg">
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<!-- Solar array -->
+
+<section class="project">
+
+    <div class="description">
+
+        <h2>Spacecraft solar array opening</h2>
+
+        <p>
+            Multibody dynamics analysis of a spacecraft soalr array openning sequence.
+        </p>
+
+
+        <a href="pdf/Multibody_dynamics.pdf" target="_blank">
+            Open project report (PDF)
+        </a>
+
+
+    </div>
+
+
+
+    <div class="media-container">
+
+        <img src="images/multibody1.jpg">
+        <img src="images/multibody1.jpg">
+
+
+    </div>
+</section>
+
+
+
+<!-- Bachelor's thesis -->
+
+<section class="project">
+
+    <div class="description">
+
+        <h2>Feedforward control of underactuated multibody systems in a co-simulation.</h2>
+
+        <p>
+            blablabla
+        </p>
+
+
+        <a href="pdf/Bachelor_thesis.pdf" target="_blank">
+            Open project report (PDF)
+        </a>
+
+
+    </div>
+
+
+
+    <div class="media-container">
+
+        <img src="images/multibody1.jpg">
+        <img src="images/multibody1.jpg">
+
+
+    </div>
+</section>
+
+
+
+
+
+<!-- MOTOSTUDENT -->
+
+
+<section class="project">
+
+
+    <div class="description">
+
+
+        <h2>MotoStudent</h2>
+
+
+        <p>
+            Overview of selected mechanical and electrical projects
+            developed during my time at SKAP WUT. Work included
+            motorcycle components, electrical systems and FEM analysis.
+        </p>
+
+
+    </div>
+
+
+
+    <div class="media-container">
+
+
+        <img src="images/skap_motor.jpg">
+
+        <img src="images/skap_lamination.jpg">
+
+        <img src="images/skap_electrical_work.jpg">
+
+        <img src="images/skap_electrical_schematics.png">
+
+        <img src="images/skap_swingarm.jpg">
+
+        <img src="images/skap_swingarm_tip.jpg">
+
+
+        <img src="images/skap_swingarm_fem.png">
+
+
+        <video controls>
+            <source src="video/adams_skap.mp4" type="video/mp4">
+        </video>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+</div>
+
+
 </body>
+
 </html>
