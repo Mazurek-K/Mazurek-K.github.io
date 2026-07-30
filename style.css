@@ -5,6 +5,33 @@ body {
     color: #222;
 }
 
+.about-page {
+    max-width: 800px;   /* Adjust as needed */
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* .cv-page {
+    max-width: 1000px;   /* Adjust as needed */
+    margin: 40px auto;
+    padding: 0 20px;
+} */
+
+
+.cv-page {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.cv-page iframe {
+    width: 75%;
+    height: 80vh; /* adjust this */
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
 
 /* Navigation */
 

@@ -21,6 +21,94 @@
 <div class="projects">
 
 
+
+
+<!-- SPACE MISSION -->
+
+<section class="project">
+
+    <div class="description">
+
+        <h2>Space Mission Reverse Engineering</h2>
+
+        <p>
+            <strong> March 2026 - July 2026 </strong>   
+        </p>
+
+        <p>
+            Analysis and reconstruction of JAXA GOSAT remote sensig mission. The work included a deep literature review, subsystem sizing
+            as well as numerical simulaitons.
+            <br> A selection of simulations results that I have developed throughout this project is displayed 
+            on the right. They included eg. in-body field of view analysis, TT&C communication windows and multimodal transient 
+            thermal analysis. 
+         
+        </p>
+
+
+        <a href="pdf/SSEO.pdf" target="_blank">
+            Open project report (PDF)
+        </a>
+
+    </div>
+
+
+
+    <div class="media-container">
+
+        <img src="images/fov.png">
+        <img src="images/groundstations.png">
+        <img src="images/rays.png">
+        <img src="images/thermal_nodes.png">
+        <img src="images/transient.png">
+
+
+    </div>
+
+
+</section>
+
+
+<!-- Space propulsion -->
+
+<section class="project">
+
+    <div class="description">
+
+        <h2>Solid Rocket Motor Design</h2>
+
+        <p>
+            <strong> April 2026 </strong>   
+        </p>
+
+        <p>
+            Bates-style motor design with a water-cooled nozzle. 
+            <br> My contribution included combustion computations using NASA Rocket-Cea
+            as well as technical considerations.
+        </p>
+
+
+        <a href="pdf/Propulsion_project.pdf" target="_blank">
+            Open project report (PDF)
+        </a>
+
+
+    </div>
+
+
+
+    <div class="media-container">
+
+        <img src="images/vielle.png">
+        <img src="images/prop_architecture.png">
+        <img src="images/composition.png">
+
+
+
+    </div>
+</section>
+
+
+
 <!-- FEM SOLVER -->
 
 <section class="project">
@@ -28,6 +116,9 @@
     <div class="description">
 
         <h2>2D FEM Solver</h2>
+        <p>
+            <strong> March 2026 </strong>   
+        </p>
 
         <p>
             A lightweight Python finite element method package for structural analysis. 
@@ -66,43 +157,6 @@
 
 
 
-<!-- SPACE MISSION -->
-
-<section class="project">
-
-    <div class="description">
-
-        <h2>Space Mission Reverse Engineering</h2>
-
-        <p>
-            Analysis and reconstruction of JAXA GOSAT remote sensig mission. The work included deep literature review
-            as well as numerical simulaitons. On the left are presented selected simulation results which I developped for the project.
-        </p>
-
-
-        <a href="pdf/SSEO.pdf" target="_blank">
-            Open project report (PDF)
-        </a>
-
-    </div>
-
-
-
-    <div class="media-container">
-
-        <img src="images/space1.jpg">
-        <img src="images/space2.jpg">
-
-    </div>
-
-
-</section>
-
-
-
-
-
-
 
 <!-- ATTITUDE CONTROL -->
 
@@ -114,8 +168,16 @@
         <h2>Satellite Attitude Control</h2>
 
         <p>
-            Design and analysis of spacecraft attitude dynamics and
-            control strategies.
+            <strong> October 2025 - January 2026 </strong>   
+        </p>
+
+        <p>
+            Design, simulation, and control of a microsatellite orbiting in LEO, developed in Simulink. <br>
+            My work included creating the overall project architecture, modelling the spacecraft dynamics, 
+            environmental perturbations, CMGs, thrusters, and the detumbling strategy. 
+            I also made significant contributions to the design of the nadir-pointing LQR 
+            controller and the modelling of the sensors.
+
         </p>
 
 
@@ -130,10 +192,15 @@
 
     <div class="media-container">
 
-        <img src="images/attitude1.jpg">
-        <video controls>
-            <source src="video/attitude.mp4" type="video/mp4">
-        </video>
+        <img src="images/architecture.png">
+        <img src="images/magfield.png">
+        <img src="images/cmg.png">
+        <img src="images/detumble.png">
+        <img src="images/lqr.png">
+
+
+
+
 
     </div>
 
@@ -148,10 +215,19 @@
 
     <div class="description">
 
-        <h2>Orbital Mechanics</h2>
+        <h2>Spacecraft Orbital Mechanics</h2>
 
         <p>
-            Design and analysis of spacecraft interplanetary transfer and closed-orbit perturbations
+            <strong> October 2025 - January 2026 </strong>   
+        </p>
+
+        <p>
+            Design of spacecraft interplanetary transfer; modeling and analysis of closed-orbit perturbations
+            using cartesian propagation and Gauss planetary equations. <br>
+            My main contribution included developing an interplanetary transfer from Venus to Earth to 
+            an asteroid using the patched-conics approach while minimizing the total ΔV. 
+            For this purpose, a multi-step pruned grid-search algorithm was implemented.
+ 
         </p>
 
 
@@ -166,9 +242,9 @@
 
     <div class="media-container">
 
-        <img src="images/orbital1.jpg">
-        <img src="images/orbital1.jpg">
-
+        <img src="images/porkchop.png">
+        <img src="images/patchedconics.png">
+        <img src="images/flyby.png">
 
     </div>
 
@@ -185,10 +261,15 @@
 
     <div class="description">
 
-        <h2>Spacecraft solar array opening</h2>
+        <h2>Spacecraft solar array deployment</h2>
 
         <p>
-            Multibody dynamics analysis of a spacecraft soalr array openning sequence.
+            <strong> April 2024 - June 2024 </strong>   
+        </p>
+
+        <p>
+            Multibody dynamics analysis of a spacecraft soalr array openning sequence. <br>
+            My contribution included developing satelite simulation in MSC Adams.
         </p>
 
 
@@ -202,10 +283,11 @@
 
 
     <div class="media-container">
-
-        <img src="images/multibody1.jpg">
-        <img src="images/multibody1.jpg">
-
+        <video controls>
+            <source src="video/opening_sequence.mp4" type="video/mp4">
+        </video>
+        <img src="images/panel1.png">
+        <img src="images/panel2.png">
 
     </div>
 </section>
@@ -218,10 +300,14 @@
 
     <div class="description">
 
-        <h2>Feedforward control of underactuated multibody systems in a co-simulation.</h2>
+        <h2>Feedforward control of underactuated multibody systems in a co-simulation framework.</h2>
 
         <p>
-            blablabla
+            <strong> October 2024 - February 2025 </strong>   
+        </p>
+
+        <p>
+            Co-simulation between Python and MSC Adams, feedforward control implemented through 'servo constraints'.
         </p>
 
 
@@ -236,8 +322,9 @@
 
     <div class="media-container">
 
-        <img src="images/multibody1.jpg">
-        <img src="images/multibody1.jpg">
+        <img src="images/multibody_architecture.png">
+        <img src="images/2beam.png">
+        <img src="images/lissajous.png">
 
 
     </div>
@@ -258,11 +345,16 @@
 
         <h2>MotoStudent</h2>
 
+        <p>
+            <strong> October 2021 - June 2025 </strong>   
+        </p>
 
         <p>
-            Overview of selected mechanical and electrical projects
-            developed during my time at SKAP WUT. Work included
-            motorcycle components, electrical systems and FEM analysis.
+        Overview of selected mechanical and electrical projects developed during my time at SKAP WUT. 
+        My work included motorcycle swingarm design and FEM analysis, chain tensioner and rear 
+        brake design, test bench electric drivetrain design and construction, manual workshop activities, 
+        procurement, organizational promotion, and team activities.
+
         </p>
 
 
